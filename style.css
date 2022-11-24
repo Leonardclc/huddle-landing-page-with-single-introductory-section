@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body {
+    background-color:  hsl(257, 40%, 49%);
+    font-size: 1rem;
+    color: white;
+  }
+
+  .background {
+    position: absolute;
+    height: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 77vh;
+    position: relative;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 100px;
+  }
+  .mockup {
+    position: relative;
+    top: 50px;
+    height: 80%;
+    width: auto;
+  }
+
+  .logo {
+    margin-left: 6.6%;
+    padding-top: 50px;
+    position: relative;
+  }
+
+  h1 {
+    padding-top: 200px;
+    width: 600px;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+  }
+
+  p {
+    width: 500px;
+    margin-right: 300px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .register {
+    background-color: white;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 45px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+  }
+
+  footer {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    padding-right: 50px;
+  }
+
+  footer > a {
+    width: 50px;
+    display: flex;
+  }
+
+  footer > a:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    filter: invert(67%) sepia(39%) saturate(2913%) hue-rotate(237deg) brightness(104%) contrast(82%);
+  }
+
+  .bg-mobile {
+    display: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    main {
+      text-align: center;
+    }
+  
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      height: initial;
+    }
+
+    .mockup {
+      top: initial;
+      height: initial;
+      width: initial;
+      width: 350px;
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
+
+    .text {
+      padding-left: initial;
+      bottom: initial;
+      align-items: center;
+    }
+
+    h1 {
+      padding-top: initial;
+      width: 300px;
+      font-size: 1.5rem;
+      padding-bottom: 20px;
+    }
+
+    p {
+      width: 300px;
+      margin-right: initial;
+      font-size: initial;
+    }
+
+    .logo {
+      width: 150px;
+      height: auto;
+    }
+
+    footer {
+      padding-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding-right: initial;
+    }
+  
+    footer > a {
+      width: 35px;
+      display: flex;
+    }
+
+    .register {
+      width: 220px;
+      height: 50px;
+    }
+
+    .background {
+      display: none;
+    }
+
+    .bg-mobile {
+      display: block;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+    }
+  }
+
+  
